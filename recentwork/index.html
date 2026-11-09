@@ -8,149 +8,131 @@
 <link rel="canonical" href="https://ra-shipit.github.io/ra-digital/recentwork/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0e0f13;
-    --body:#24262e;
-    --muted:#6a6f7a;
-    --line:#e8e8ec;
-    --bg:#ffffff;
-    --soft:#f7f7f5;
-    --accent:#ff5a2c;
-    --accent-soft:rgba(255,90,44,.09);
-    --maxw:940px;
+    --ink:#16171b;
+    --body:#3a3c44;
+    --muted:#85888f;
+    --line:#e6e3da;
+    --bg:#faf8f3;
+    --panel:#f1f1f7;
+    --accent:#223a86;
+    --accent-dark:#182a63;
+    --accent-tint:rgba(34,58,134,.06);
+    --maxw:920px;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     font-family:"Inter","Helvetica Neue",Arial,sans-serif;
     color:var(--body);
-    font-size:16.5px;
-    line-height:1.62;
+    font-size:17px;
+    line-height:1.65;
     background:var(--bg);
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,h4,.brand,.case-num{font-family:"Space Grotesk","Inter",sans-serif;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  h1,h2,h3,.serif,.num,.f-name{font-family:"Fraunces","Georgia",serif;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
   a{color:inherit;}
 
   /* Top bar */
-  .topbar{position:absolute;top:0;left:0;right:0;z-index:5;}
-  .nav-inner{display:flex;justify-content:space-between;align-items:center;padding-top:26px;}
-  .brand{color:#fff;font-weight:700;font-size:18px;letter-spacing:.2px;}
-  .nav-links a{color:rgba(255,255,255,.72);text-decoration:none;font-size:14px;font-weight:500;margin-left:22px;transition:color .15s;}
-  .nav-links a:hover{color:#fff;}
+  .topbar{border-bottom:1px solid var(--line);}
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:22px 0;}
+  .brand{font-family:"Fraunces",serif;font-weight:600;font-size:19px;color:var(--ink);letter-spacing:.2px;}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500;margin-left:24px;transition:color .15s;}
+  .nav-links a:hover{color:var(--accent);}
 
   /* Hero */
-  header.hero{
-    position:relative;background:var(--ink);color:#fff;overflow:hidden;
-    padding:150px 0 92px;
-  }
-  header.hero::before{
-    content:"";position:absolute;top:-220px;right:-160px;width:620px;height:620px;
-    background:radial-gradient(circle, rgba(255,90,44,.38), rgba(255,90,44,0) 62%);
-    filter:blur(10px);pointer-events:none;
-  }
-  header.hero::after{
-    content:"";position:absolute;left:-180px;bottom:-260px;width:520px;height:520px;
-    background:radial-gradient(circle, rgba(90,120,255,.16), rgba(90,120,255,0) 65%);
-    pointer-events:none;
-  }
-  .hero .wrap{position:relative;z-index:2;}
-  .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 22px;}
-  header.hero h1{font-size:54px;line-height:1.05;letter-spacing:-1.2px;margin:0 0 22px;max-width:15ch;font-weight:700;}
-  header.hero h1 .hl{color:var(--accent);}
-  header.hero .role{font-size:17px;color:rgba(255,255,255,.62);margin:0 0 26px;font-weight:400;}
-  header.hero p.lede{font-size:18.5px;max-width:620px;color:rgba(255,255,255,.86);margin:0 0 34px;}
+  header.hero{padding:88px 0 76px;border-bottom:1px solid var(--line);}
+  .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 26px;}
+  header.hero h1{font-size:62px;line-height:1.04;letter-spacing:-1.4px;color:var(--ink);margin:0 0 26px;max-width:16ch;font-weight:500;}
+  header.hero .role{font-size:17px;color:var(--muted);margin:0 0 28px;font-weight:400;}
+  header.hero p.lede{font-size:19px;max-width:620px;color:var(--body);margin:0 0 36px;}
   .btns a{
-    display:inline-block;margin-right:12px;padding:13px 24px;border-radius:999px;
+    display:inline-block;margin-right:12px;padding:13px 26px;border-radius:7px;
     text-decoration:none;font-size:14.5px;font-weight:600;transition:all .16s ease;
   }
   .btns a.primary{background:var(--accent);color:#fff;}
-  .btns a.primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,90,44,.4);}
-  .btns a.ghost{border:1px solid rgba(255,255,255,.26);color:#fff;}
-  .btns a.ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5);}
+  .btns a.primary:hover{background:var(--accent-dark);}
+  .btns a.ghost{border:1px solid var(--ink);color:var(--ink);}
+  .btns a.ghost:hover{background:var(--ink);color:#fff;}
 
   /* Section scaffolding */
-  section{padding:76px 0;}
-  .sec-label{display:flex;align-items:center;gap:12px;margin:0 0 38px;}
-  .sec-label .bar{width:28px;height:3px;background:var(--accent);border-radius:2px;}
-  .sec-label h2{font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin:0;font-weight:600;}
+  section{padding:74px 0;}
+  .sec-label{display:flex;align-items:center;gap:13px;margin:0 0 44px;}
+  .sec-label .bar{width:26px;height:2px;background:var(--accent);}
+  .sec-label h2{font-family:"Inter",sans-serif;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin:0;font-weight:600;}
 
   /* Case studies */
-  .cases{display:flex;flex-direction:column;gap:22px;}
-  .case{
-    display:grid;grid-template-columns:62px 1fr;gap:10px;
-    background:#fff;border:1px solid var(--line);border-radius:16px;
-    padding:30px 32px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-  }
-  .case:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(14,15,19,.09);border-color:#dcdce2;}
-  .case-num{font-size:20px;font-weight:700;color:var(--accent);padding-top:3px;}
-  .case h3{font-size:23px;line-height:1.2;margin:0 0 5px;color:var(--ink);letter-spacing:-.3px;}
-  .case .sector{font-size:13.5px;color:var(--muted);margin:0 0 18px;font-weight:500;}
-  .field{margin:0 0 13px;}
-  .field .k,.result .k{display:block;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 3px;}
-  .field p{margin:0;font-size:15.5px;}
-  .result{background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:13px 16px;margin-top:16px;}
+  .case{display:grid;grid-template-columns:84px 1fr;gap:0;padding:40px 0;border-top:1px solid var(--line);}
+  .case:first-of-type{border-top:none;padding-top:0;}
+  .num{font-size:30px;font-weight:500;color:var(--accent);line-height:1;padding-top:6px;}
+  .case h3{font-size:27px;line-height:1.18;margin:0 0 6px;color:var(--ink);letter-spacing:-.4px;font-weight:500;}
+  .case .sector{font-size:13.5px;color:var(--muted);margin:0 0 22px;font-weight:500;letter-spacing:.2px;}
+  .field{margin:0 0 16px;}
+  .field .k,.result .k{display:block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 3px;}
+  .field p{margin:0;font-size:16px;}
+  .result{background:var(--accent-tint);border-left:3px solid var(--accent);border-radius:0 7px 7px 0;padding:15px 18px;margin-top:20px;}
   .result .k{color:var(--accent);}
-  .result p{margin:0;font-size:15.5px;color:var(--ink);font-weight:500;}
+  .result p{margin:0;font-size:16px;color:var(--ink);font-weight:500;}
 
-  /* AI section (dark) */
-  section.ai{background:var(--ink);color:#fff;border-radius:28px;margin:0 auto;max-width:calc(var(--maxw) + 56px);}
-  section.ai .sec-label h2{color:rgba(255,255,255,.6);}
-  .ai-lede{font-size:21px;max-width:680px;margin:0 0 40px;color:#fff;font-family:"Space Grotesk",sans-serif;font-weight:500;line-height:1.4;}
-  .ai-lede .hl{color:var(--accent);}
-  .ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 34px;}
+  /* AI section (tinted panel) */
+  .ai-wrap{background:var(--panel);border-radius:22px;padding:60px 56px;}
+  .ai-lede{font-family:"Fraunces",serif;font-size:26px;line-height:1.32;max-width:720px;margin:0 0 44px;color:var(--ink);font-weight:400;}
+  .ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px 40px;}
   .ai-item{border-top:2px solid var(--accent);padding-top:16px;}
-  .ai-item h4{margin:0 0 7px;font-size:17px;color:#fff;font-weight:600;}
-  .ai-item p{margin:0;font-size:15px;color:rgba(255,255,255,.66);}
-  .ai-impact{margin:40px 0 0;font-size:16px;font-weight:600;color:#fff;}
+  .ai-item h4{font-family:"Inter",sans-serif;margin:0 0 7px;font-size:17px;color:var(--ink);font-weight:600;}
+  .ai-item p{margin:0;font-size:15.5px;color:var(--body);}
+  .ai-impact{margin:44px 0 0;font-size:16.5px;font-weight:600;color:var(--ink);}
   .ai-impact span{color:var(--accent);}
 
   /* Toolkit chips */
-  .tool-group{margin:0 0 22px;}
+  .tool-group{margin:0 0 26px;}
   .tool-group:last-child{margin-bottom:0;}
-  .tool-group .gl{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 11px;}
+  .tool-group .gl{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 12px;}
   .chips{display:flex;flex-wrap:wrap;gap:9px;}
   .chip{
-    display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;
-    font-size:13.5px;color:var(--body);background:var(--soft);transition:all .14s;
+    display:inline-block;padding:7px 15px;border:1px solid var(--line);border-radius:999px;
+    font-size:13.5px;color:var(--body);background:#fff;transition:all .14s;
   }
-  .chip:hover{border-color:var(--accent);color:var(--ink);}
+  .chip:hover{border-color:var(--accent);color:var(--accent);}
 
   /* Footer */
-  footer{background:var(--ink);color:#fff;padding:54px 0;margin-top:76px;}
-  footer .f-name{font-family:"Space Grotesk",sans-serif;font-size:20px;font-weight:700;margin:0 0 6px;}
-  footer .f-role{color:rgba(255,255,255,.55);font-size:14.5px;margin:0 0 22px;}
-  footer .f-contact a{color:#fff;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px;font-size:15px;}
-  footer .f-contact a:first-child{margin-right:22px;}
+  footer{background:var(--accent);color:#fff;padding:58px 0;margin-top:30px;}
+  footer .f-name{font-size:23px;font-weight:600;margin:0 0 6px;}
+  footer .f-role{color:rgba(255,255,255,.72);font-size:15px;margin:0 0 24px;}
+  footer .f-contact a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:2px;font-size:15px;transition:border-color .15s;}
+  footer .f-contact a:hover{border-color:#fff;}
+  footer .f-contact a:first-child{margin-right:24px;}
 
   @media (max-width:640px){
-    header.hero{padding:124px 0 70px;}
-    header.hero h1{font-size:37px;letter-spacing:-.6px;}
-    .case{grid-template-columns:1fr;gap:0;padding:26px 24px;}
-    .case-num{margin-bottom:8px;}
-    .ai-grid{grid-template-columns:1fr;gap:24px;}
-    section.ai{border-radius:20px;}
+    header.hero{padding:60px 0 56px;}
+    header.hero h1{font-size:40px;letter-spacing:-.8px;}
+    .case{grid-template-columns:1fr;}
+    .num{margin-bottom:12px;padding-top:0;}
+    .ai-wrap{padding:40px 26px;}
+    .ai-grid{grid-template-columns:1fr;gap:26px;}
+    .ai-lede{font-size:22px;}
   }
 </style>
 </head>
 <body>
 
+<div class="topbar">
+  <div class="wrap nav-inner">
+    <span class="brand">Rahil Shah</span>
+    <span class="nav-links">
+      <a href="mailto:rahil.shah2104@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/rahil-shah-6bb82a152" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
+</div>
+
 <header class="hero">
-  <nav class="topbar">
-    <div class="wrap nav-inner">
-      <span class="brand">Rahil Shah</span>
-      <span class="nav-links">
-        <a href="mailto:rahil.shah2104@gmail.com">Email</a>
-        <a href="https://linkedin.com/in/rahil-shah-6bb82a152" target="_blank" rel="noopener">LinkedIn</a>
-      </span>
-    </div>
-  </nav>
   <div class="wrap">
     <p class="eyebrow">Paid Media &middot; Performance &middot; Growth</p>
-    <h1>Nine years scaling paid media. <span class="hl">Now I build the AI that runs it.</span></h1>
+    <h1>Nine years scaling paid media. Now I build the AI that runs it.</h1>
     <p class="role">Digital Director &middot; Paid Search, Programmatic &amp; Paid Social</p>
     <p class="lede">
       I have managed over $80M a year in media, led the teams behind it, and stayed close enough to the
@@ -167,54 +149,52 @@
 
 <section>
   <div class="wrap">
-    <div class="sec-label"><span class="bar"></span><h2>Selected Work</h2></div>
-    <div class="cases">
+    <div class="sec-label"><span class="bar"></span><h2>Case Studies</h2></div>
 
-      <article class="case">
-        <div class="case-num">01</div>
-        <div class="case-body">
-          <h3>Full-funnel growth for a high-ticket education provider</h3>
-          <p class="sector">National accredited training provider (RTO) &middot; $3k to $12.5k qualifications, booked careers calls</p>
-          <div class="field"><span class="k">Problem</span><p>Qualifications sold through consultation calls, with a stalled pipeline, rising cost per lead, landing pages dragging quality score, and spend leaking to search terms that never converted.</p></div>
-          <div class="field"><span class="k">What I did</span><p>On search, I rebuilt the account structure and ad copy, shipped ad-group-level landing pages, and cut the waste. On Meta, I built a creative-led prospecting and retargeting engine feeding the same careers-call funnel, with a constant testing cadence of hooks, angles and formats. I also stood up an AI agent that tracks competitor course offers and promotions in near real time, so we could counter-position pricing and intake angles within the day, not the month. To lift lead quality, I reworked the forms with qualifying questions and built an email nurture sequence that warmed enquiries into booked calls. Across both channels, CRM enrolment data was wired back into bidding, so the algorithms optimised to booked calls and closed enrolments, not form fills.</p></div>
-          <div class="result"><span class="k">Result</span><p>Blended cost per acquisition held near $100, lead quality and booked-call rates improved, and attributed deal revenue more than doubled as the turnaround took hold.</p></div>
-        </div>
-      </article>
+    <article class="case">
+      <div class="num">01</div>
+      <div class="case-body">
+        <h3>Full-funnel growth for a high-ticket education provider</h3>
+        <p class="sector">National accredited training provider (RTO) &middot; $3k to $12.5k qualifications, booked careers calls</p>
+        <div class="field"><span class="k">Problem</span><p>Qualifications sold through consultation calls, with a stalled pipeline, rising cost per lead, landing pages dragging quality score, and spend leaking to search terms that never converted.</p></div>
+        <div class="field"><span class="k">What I did</span><p>On search, I rebuilt the account structure and ad copy, shipped ad-group-level landing pages, and cut the waste. On Meta, I built a creative-led prospecting and retargeting engine feeding the same careers-call funnel, with a constant testing cadence of hooks, angles and formats. I also stood up an AI agent that tracks competitor course offers and promotions in near real time, so we could counter-position pricing and intake angles within the day, not the month. To lift lead quality, I reworked the forms with qualifying questions and built an email nurture sequence that warmed enquiries into booked calls. Across both channels, CRM enrolment data was wired back into bidding, so the algorithms optimised to booked calls and closed enrolments, not form fills.</p></div>
+        <div class="result"><span class="k">Result</span><p>Blended cost per acquisition held near $100, lead quality and booked-call rates improved, and attributed deal revenue more than doubled as the turnaround took hold.</p></div>
+      </div>
+    </article>
 
-      <article class="case">
-        <div class="case-num">02</div>
-        <div class="case-body">
-          <h3>Value-based bidding across a card portfolio</h3>
-          <p class="sector">Tier-1 finance client &middot; $80M+ media account &middot; SA360, value-based bidding</p>
-          <div class="field"><span class="k">Problem</span><p>The client ran four to five credit card products, and the priority shifted month to month: the card the business most wanted to grow kept changing. Standard cost-per-acquisition bidding treated every card the same and could not steer demand toward the one that mattered most.</p></div>
-          <div class="field"><span class="k">What I did</span><p>Leading a team of seven on the account, I moved the card portfolio onto value-based bidding. Working with the client, we set a conversion value for each card and reallocated those values as priorities shifted, so the algorithm leaned into the cards the business wanted and eased off the rest. Bidding moved from cost per acquisition to conversion value, with the value weights as the steering wheel.</p></div>
-          <div class="result"><span class="k">Result</span><p>More applications on the priority cards, with cost per acquisition coming down and conversion volume up across the portfolio.</p></div>
-        </div>
-      </article>
+    <article class="case">
+      <div class="num">02</div>
+      <div class="case-body">
+        <h3>Value-based bidding across a card portfolio</h3>
+        <p class="sector">Tier-1 finance client &middot; $80M+ media account &middot; SA360, value-based bidding</p>
+        <div class="field"><span class="k">Problem</span><p>The client ran four to five credit card products, and the priority shifted month to month: the card the business most wanted to grow kept changing. Standard cost-per-acquisition bidding treated every card the same and could not steer demand toward the one that mattered most.</p></div>
+        <div class="field"><span class="k">What I did</span><p>Leading a team of seven on the account, I moved the card portfolio onto value-based bidding. Working with the client, we set a conversion value for each card and reallocated those values as priorities shifted, so the algorithm leaned into the cards the business wanted and eased off the rest. Bidding moved from cost per acquisition to conversion value, with the value weights as the steering wheel.</p></div>
+        <div class="result"><span class="k">Result</span><p>More applications on the priority cards, with cost per acquisition coming down and conversion volume up across the portfolio.</p></div>
+      </div>
+    </article>
 
-      <article class="case">
-        <div class="case-num">03</div>
-        <div class="case-body">
-          <h3>From a HK$450K target to a seven-figure day</h3>
-          <p class="sector">Premium DTC meat brand, Hong Kong &middot; eCommerce launch</p>
-          <div class="field"><span class="k">Brief</span><p>Hit a HK$450K single-day revenue target on a flagship sale launch.</p></div>
-          <div class="field"><span class="k">What I did</span><p>Built a manufactured-scarcity hype sequence around one hero SKU, capped at a limited run, sequenced across teaser, VIP early access and launch emails alongside paid. That single SKU drove roughly a third of the day's revenue and pulled hundreds of other products into carts.</p></div>
-          <div class="result"><span class="k">Result</span><p>A HK$1.03M day from 825 orders with zero cancellations, the brand's first seven-figure sales day in five years and more than 2x the target. The all-time sales-day record has been broken four times since the engagement began.</p></div>
-        </div>
-      </article>
+    <article class="case">
+      <div class="num">03</div>
+      <div class="case-body">
+        <h3>From a HK$450K target to a seven-figure day</h3>
+        <p class="sector">Premium DTC meat brand, Hong Kong &middot; eCommerce launch</p>
+        <div class="field"><span class="k">Brief</span><p>Hit a HK$450K single-day revenue target on a flagship sale launch.</p></div>
+        <div class="field"><span class="k">What I did</span><p>Built a manufactured-scarcity hype sequence around one hero SKU, capped at a limited run, sequenced across teaser, VIP early access and launch emails alongside paid. That single SKU drove roughly a third of the day's revenue and pulled hundreds of other products into carts.</p></div>
+        <div class="result"><span class="k">Result</span><p>A HK$1.03M day from 825 orders with zero cancellations, the brand's first seven-figure sales day in five years and more than 2x the target. The all-time sales-day record has been broken four times since the engagement began.</p></div>
+      </div>
+    </article>
 
-    </div>
   </div>
 </section>
 
-<section>
-  <section class="ai">
-    <div class="wrap">
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="ai-wrap">
       <div class="sec-label"><span class="bar"></span><h2>How I Work With AI</h2></div>
       <p class="ai-lede">
         I build with Claude Code and MCP integrations: custom agents that connect to the ad platforms,
-        analytics and CRM and run real marketing work end to end. <span class="hl">This is built
-        software, not prompts and copy-paste.</span>
+        analytics and CRM and run real marketing work end to end. This is built software, not prompts and
+        copy-paste.
       </p>
       <div class="ai-grid">
         <div class="ai-item">
@@ -236,17 +216,17 @@
       </div>
       <p class="ai-impact">The result: <span>the distance from insight to action drops from days to hours.</span></p>
     </div>
-  </section>
+  </div>
 </section>
 
-<section>
+<section style="padding-top:0;">
   <div class="wrap">
     <div class="sec-label"><span class="bar"></span><h2>Toolkit</h2></div>
 
     <div class="tool-group">
       <p class="gl">AI &amp; Automation</p>
       <div class="chips">
-        <span class="chip">Claude Code</span><span class="chip">Claude (Anthropic)</span><span class="chip">MCP integrations</span><span class="chip">ChatGPT / OpenAI</span><span class="chip">Gemini</span><span class="chip">Cursor</span><span class="chip">n8n</span><span class="chip">Zapier</span><span class="chip">Apify</span><span class="chip">DataForSEO</span>
+        <span class="chip">Claude Code</span><span class="chip">Claude (Anthropic)</span><span class="chip">MCP integrations</span><span class="chip">ChatGPT / OpenAI</span><span class="chip">Gemini</span><span class="chip">Cursor</span><span class="chip">Higgsfield</span><span class="chip">n8n</span><span class="chip">Zapier</span><span class="chip">Apify</span><span class="chip">DataForSEO</span>
       </div>
     </div>
 
