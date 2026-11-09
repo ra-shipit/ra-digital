@@ -120,11 +120,22 @@
 
   @media print{
     *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
-    @page{margin:14mm;}
-    .case{break-inside:avoid;}
-    .ai-item{break-inside:avoid;}
-    .tool-group{break-inside:avoid;}
-    .ai-wrap{break-inside:avoid;}
+    @page{margin:12mm;}
+    .wrap{padding:0 8mm;}
+    header.hero{padding:28px 0 24px;}
+    header.hero h1{font-size:38px;margin-bottom:16px;}
+    header.hero .role{margin-bottom:16px;}
+    header.hero p.lede{font-size:15.5px;margin-bottom:22px;}
+    section{padding:26px 0;}
+    .sec-label{margin-bottom:22px;}
+    .ai-wrap{background:transparent;padding:0;border-radius:0;}
+    .ai-lede{font-size:18px;margin-bottom:22px;}
+    .ai-grid{gap:18px 30px;}
+    .case{break-inside:avoid;padding:22px 0;}
+    .case-stat,.case h3,.case .sector,.sec-label,h2,h3,h4{break-after:avoid;}
+    .field,.result,.ai-item,.tool-group{break-inside:avoid;}
+    p{orphans:3;widows:3;}
+    footer{margin-top:22px;}
   }
 </style>
 </head>
