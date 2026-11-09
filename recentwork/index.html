@@ -117,6 +117,15 @@
     .ai-grid{grid-template-columns:1fr;gap:26px;}
     .ai-lede{font-size:22px;}
   }
+
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    @page{margin:14mm;}
+    .case{break-inside:avoid;}
+    .ai-item{break-inside:avoid;}
+    .tool-group{break-inside:avoid;}
+    .ai-wrap{break-inside:avoid;}
+  }
 </style>
 </head>
 <body>
