@@ -1,20 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ra Digital</title>
-  <style>
-    body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#0b0b0f;color:#f5f5f7}
-    .wrap{text-align:center;padding:2rem}
-    h1{font-size:clamp(2rem,6vw,4rem);margin:0 0 .5rem;letter-spacing:-.02em}
-    p{opacity:.6;margin:0}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahil Shah — Digital Director, Paid Media & Growth</title>
+<meta name="description" content="Digital Director specialising in paid search, programmatic and paid social, with nine years driving performance at scale and building AI systems across the funnel.">
+<style>
+  :root{
+    --ink:#161616;
+    --muted:#5a5a5a;
+    --rule:#e2e2e2;
+    --bg:#ffffff;
+    --soft:#f6f6f4;
+    --accent:#111;
+    --accent-ai:#0b5c4b;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Helvetica Neue",Arial,"Segoe UI",sans-serif;
+    color:var(--ink);
+    font-size:16px;
+    line-height:1.6;
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px;}
+
+  /* Hero */
+  header.hero{padding:72px 0 40px;border-bottom:1px solid var(--rule);}
+  .eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:0 0 14px;}
+  header.hero h1{font-size:44px;line-height:1.1;margin:0 0 10px;letter-spacing:-.5px;}
+  header.hero .role{font-size:20px;color:var(--muted);margin:0 0 22px;font-weight:400;}
+  header.hero p.lede{font-size:18px;max-width:640px;margin:0 0 26px;}
+  .links a{
+    display:inline-block;margin-right:10px;margin-bottom:8px;padding:9px 16px;
+    border:1px solid var(--ink);border-radius:999px;text-decoration:none;color:var(--ink);
+    font-size:14px;font-weight:600;transition:all .15s ease;
+  }
+  .links a:hover{background:var(--ink);color:#fff;}
+  .links a.primary{background:var(--ink);color:#fff;}
+  .links a.primary:hover{opacity:.85;}
+
+  section{padding:46px 0;border-bottom:1px solid var(--rule);}
+  h2{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:0 0 26px;font-weight:700;}
+
+  /* Case studies */
+  .case{margin-bottom:34px;}
+  .case:last-child{margin-bottom:0;}
+  .case h3{font-size:21px;margin:0 0 4px;}
+  .case .sector{font-size:14px;color:var(--muted);margin:0 0 14px;}
+  .case .block{margin:0 0 10px;}
+  .case .block .label{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:700;}
+  .case .outcome{background:var(--soft);border-left:3px solid var(--ink);padding:12px 16px;border-radius:4px;margin-top:12px;}
+  .case .outcome .label{color:var(--ink);}
+
+  /* AI section */
+  section.ai{background:var(--soft);border-bottom:1px solid var(--rule);}
+  section.ai h2{color:var(--accent-ai);}
+  .ai-lede{font-size:19px;max-width:680px;margin:0 0 24px;}
+  .ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;}
+  .ai-grid .item h4{margin:0 0 4px;font-size:16px;}
+  .ai-grid .item p{margin:0;font-size:15px;color:var(--muted);}
+  .ai-impact{margin-top:24px;font-size:16px;font-weight:600;}
+
+  /* Tools */
+  .tools{font-size:15px;color:var(--muted);}
+  .tools b{color:var(--ink);}
+
+  footer{padding:40px 0 70px;}
+  footer p{margin:0 0 6px;color:var(--muted);font-size:15px;}
+  footer a{color:var(--ink);}
+
+  @media (max-width:620px){
+    header.hero h1{font-size:34px;}
+    .ai-grid{grid-template-columns:1fr;}
+  }
+</style>
 </head>
 <body>
+
+<header class="hero">
   <div class="wrap">
-    <h1>Ra Digital</h1>
-    <p>Live site placeholder &middot; ready to build on</p>
+    <p class="eyebrow">Paid Media &middot; Performance &middot; Growth</p>
+    <h1>Rahil Shah</h1>
+    <p class="role">Digital Director &middot; Paid Search, Programmatic &amp; Paid Social</p>
+    <p class="lede">
+      Nine years running paid media at serious scale for ambitious brands, and now building the AI
+      systems that change how it gets done. I set the strategy, lead the teams delivering it, and stay
+      close enough to the platforms to know what is actually moving results.
+    </p>
+    <div class="links">
+      <a class="primary" href="https://linkedin.com/in/rahil-shah-6bb82a152" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:rahil.shah2104@gmail.com">Email</a>
+    </div>
   </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Selected Work</h2>
+
+    <div class="case">
+      <h3>National fitness and health education provider</h3>
+      <p class="sector">Accredited training provider (RTO) &middot; high-ticket courses sold through booked careers calls</p>
+      <p class="block"><span class="label">Challenge:</span> Personal Training, Nutrition and Remedial Massage qualifications sold via consultation calls, with paid search efficiency and landing-page quality dragging the enrolment pipeline.</p>
+      <p class="block"><span class="label">What I did:</span> Rebuilt account structure and ad copy, shipped ad-group-level landing pages, cleared wasted spend, and wired CRM offline-conversion data back into Google and Meta so optimisation ran on real enrolments rather than platform proxies.</p>
+      <div class="outcome"><span class="label">Outcome:</span> Pipeline recovery with blended cost per acquisition held around $100, and attributed deal revenue up roughly 4x month on month through the turnaround.</div>
+    </div>
+
+    <div class="case">
+      <h3>Tier-1 finance brand</h3>
+      <p class="sector">Global media network &middot; compliance-heavy category</p>
+      <p class="block"><span class="label">Challenge:</span> Grow and protect more than $80M a year in media across search, programmatic and social, with strict compliance and sign-off requirements.</p>
+      <p class="block"><span class="label">What I did:</span> Led a team of seven, set media strategy end to end, drove testing frameworks and emerging-tech adoption, and owned reporting and optimisation across every channel.</p>
+      <div class="outcome"><span class="label">Outcome:</span> Scaled activation at enterprise budget levels with account safety and sign-off discipline maintained throughout.</div>
+    </div>
+
+    <div class="case">
+      <h3>eCommerce brand portfolio</h3>
+      <p class="sector">Performance agency &middot; national and international DTC brands</p>
+      <p class="block"><span class="label">Challenge:</span> Drive growth across a portfolio of local and international eCommerce brands under aggressive performance targets.</p>
+      <p class="block"><span class="label">What I did:</span> Managed $100M+ in ad spend, built account and campaign strategy, forecasting and insights, and trained local and international account teams.</p>
+      <div class="outcome"><span class="label">Outcome:</span> Google Premier Partner performance and multiple industry award shortlists for online sales and lead generation.</div>
+    </div>
+  </div>
+</section>
+
+<section class="ai">
+  <div class="wrap">
+    <h2>How I Work With AI</h2>
+    <p class="ai-lede">
+      I build AI agents and automations with Claude Code and MCP integrations, across the full funnel.
+      It is a different operating model, not a bolt-on, and it is how I deliver at speed.
+    </p>
+    <div class="ai-grid">
+      <div class="item">
+        <h4>Creative and landing pages at scale</h4>
+        <p>Production of ad creative and landing pages in hours, not weeks, with testing built in.</p>
+      </div>
+      <div class="item">
+        <h4>Real-data optimisation</h4>
+        <p>CRM and offline conversion data piped into ad platforms so decisions run on real revenue, not platform proxies.</p>
+      </div>
+      <div class="item">
+        <h4>Reporting and audit agents</h4>
+        <p>Agents that turn raw account data into clear next actions and client-ready reporting.</p>
+      </div>
+      <div class="item">
+        <h4>Account hygiene, automated</h4>
+        <p>Search-term harvesting, negative management and budget pacing handled by repeatable workflows.</p>
+      </div>
+    </div>
+    <p class="ai-impact">The result: the time from insight to action compressed from days to hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Toolkit</h2>
+    <p class="tools">
+      <b>AI &amp; automation:</b> Claude Code, Claude (Anthropic), MCP integrations, ChatGPT / OpenAI, Gemini, Cursor, n8n, Zapier, Apify, DataForSEO<br>
+      <b>Ad platforms:</b> Google Ads, Microsoft Ads, Meta, TikTok, Apple Search Ads, DV360, The Trade Desk, SA360, CM360<br>
+      <b>Analytics &amp; tracking:</b> GA4, GA360, Adobe Analytics, Looker Studio, Google Tag Manager (incl. server-side), Branch.io<br>
+      <b>CRM, funnel &amp; commerce:</b> HubSpot, Salesforce, SwipePages, ClickFunnels, Triple Whale, Shopify, WordPress
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Rahil Shah &middot; Digital Director, Paid Media &amp; Growth</p>
+    <p><a href="mailto:rahil.shah2104@gmail.com">rahil.shah2104@gmail.com</a> &middot; <a href="https://linkedin.com/in/rahil-shah-6bb82a152" target="_blank" rel="noopener">linkedin.com/in/rahil-shah-6bb82a152</a></p>
+  </div>
+</footer>
+
 </body>
 </html>
